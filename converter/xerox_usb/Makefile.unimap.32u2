@@ -1,4 +1,4 @@
-TARGET ?= newton_usb_32u2_unimap
+TARGET ?= xerox_usb_32u2_unimap
 MCU ?= atmega32u2
 
 include Makefile.unimap

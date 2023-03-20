@@ -1,5 +1,5 @@
 # Target file name (without extension).
-TARGET ?= newton_usb_unimap
+TARGET ?= xerox_usb_unimap
 
 # Directory common source filess exist
 TMK_DIR ?= ../../tmk_core
