@@ -1,6 +1,6 @@
 TMK Keyboard for Xerox DocuTech/Daybreak
 =============================
-This repository includes my Xerox DocuTech/Daybreak (codenamed "Xericity") converter project built with the [`tmk_core`](https://github.com/tmk/tmk_core) keyboard firmware library.
+This repository includes my Xerox DocuTech/Daybreak converter project (codenamed "Xericity") built with the [`tmk_core`](https://github.com/tmk/tmk_core) keyboard firmware library.
 
 This firmware is expected to support all of the features available to TMK protocol converters. If you have any issues, please open a bug. Additionally, comments or suggestions are welcome in the discussions tab.
 
