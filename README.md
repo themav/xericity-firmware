@@ -35,5 +35,5 @@ FAQ
 ---
 Q1. Will you port this converter to the QMK/VIA(L) firmware project?  
  A. At some point I am very likely to redo this to eliminate the dependency on AVR, and, at that time I will likely consider porting to QMK and/or VIA(L).  
- Q2. What type of hardware is required for this?
+ Q2. What type of hardware is required for this?  
  A. While this primarily targets my "Xericity" converter hardware, a homemade adaptor is possible. See the protocol docs for more information.
