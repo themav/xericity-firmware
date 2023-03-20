@@ -10,7 +10,7 @@ The latest TMK source code is available here: <http://github.com/tmk/tmk_keyboar
 
 Documentation
 -------------
-See the [`README.md`](./converter/xerox_usb/README.md) for wiring and build instructions, as well as further information about the converter.
+See the firmware's [`README.md`](./converter/xerox_usb/README.md) for wiring and build instructions, as well as further information about the converter.
 
 
 Refer to the wiki pages for further info on TMK:
