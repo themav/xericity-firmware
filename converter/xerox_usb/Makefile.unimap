@@ -57,7 +57,7 @@ MOUSEKEY_ENABLE ?= yes	# Mouse keys
 EXTRAKEY_ENABLE ?= yes	# Audio control and System control
 CONSOLE_ENABLE ?= yes	# Console for debug
 COMMAND_ENABLE ?= yes    # Commands for debug and configuration
-#NKRO_ENABLE ?= yes	# USB Nkey Rollover
+NKRO_ENABLE ?= yes	# USB Nkey Rollover
 UNIMAP_ENABLE ?= yes
 KEYMAP_SECTION_ENABLE ?= yes   #Should Unimap be moved to a fixed offset (address) for GUI modification
 XEROX_MOUSE_ENABLE ?= yes		# Xerox Mouse support
@@ -84,7 +84,7 @@ endif
 ifdef KEYMAP
     SRC := $(KEYMAP_FILE)_$(KEYMAP).c $(SRC)
 else
-    SRC := $(KEYMAP_FILE).c $(SRC)
+    SRC := $(KEYMAP_FILE)_plain.c $(SRC)
 endif
 
 

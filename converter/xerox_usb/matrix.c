@@ -65,22 +65,22 @@ uint8_t matrix_scan(void)
 {
     uint16_t code;
     code = serial_recv2(); //Read the scancode from the interface.
-    if (code == -1) {
+    if (code == -1 || code == 0x00 || code == 0xFF) {
         return 0; //Do nothing if no code was received.
     }
 
     print_hex8(code); print(" "); //Debug output
 
-    // Check to see if this is a make or break code. Since make codes are all above 0x80 and-ing them with 0x80 should return true.
+    // Check to see if this is a make or break code. Since make codes are all below 0x80 and-ing them with 0x80 should return true, telling us it's a break code.
     if (code & 0x80) {
-        // Make scancode
-        if (!matrix_is_on(ROW(code), COL(code))) {
-            matrix[ROW(code)] |=  (1<<COL(code));
-        }
-    } else {
         // Break scancode
         if (matrix_is_on(ROW(code), COL(code))) {
-            matrix[ROW(code)] &= ~(1<<COL(code));
+            matrix[ROW(code)] &=  ~(1<<COL(code));
+        }
+    } else {
+        // Make scancode
+        if (!matrix_is_on(ROW(code), COL(code))) {
+            matrix[ROW(code)] |= (1<<COL(code));
         }
     }
 	return code;
@@ -92,7 +92,7 @@ uint8_t matrix_get_row(uint8_t row)
     return matrix[row];
 }
 
-//NOOP since this keyboard does not have LEDs.
+//TODO: Implement caps lock LEDs.
 void led_set(uint8_t usb_led)
 {
 }

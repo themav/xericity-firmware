@@ -12,5 +12,6 @@ tags
 build/
 *.bak
 .DS_Store
+obj_*/
 !converter/*/binary/*.hex
 !keyboard/*/binary/*.hex
