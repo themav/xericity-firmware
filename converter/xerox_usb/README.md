@@ -7,7 +7,7 @@ README FIRST
 ------------
 This converter was developed with a Xerox 6085 keyboard, model 65D.
 
-Unimap is the only keymap supported. Changes if necessary can be made in the standard Unimap fashion, including the TMK website's keymap editor. Please see the TMK documentation for how to modify firmware files via the website's keymap editor. You will need to select the "USB-USB" converter on the website [or click here](http://www.tmk-kbd.com/tmk_keyboard/editor/unimap/?usb_usb), upload the Newton converter firmware file, and then make your changes. The resulting file will be renamed to "unimap.hex".
+Unimap is the only keymap supported. Changes if necessary can be made in the standard Unimap fashion, including the TMK website's keymap editor. Please see the TMK documentation for how to modify firmware files via the website's keymap editor. You will need to select the "USB-USB" converter on the website [or click here](http://www.tmk-kbd.com/tmk_keyboard/editor/unimap/?usb_usb), upload the Xericity converter firmware file, and then make your changes. The resulting file will be renamed to "unimap.hex".
 
 The default keymap has sane defaults, with most keys doing what they say they will do.
 The left-hand key bank is set up for F1-F10, like on many XT/AT-class keyboards. The number pad is setup as you would expect as well; the "clear" button can be used as Num Lock.
@@ -52,7 +52,7 @@ Frame format: 1-Start bit(Lo), 8-Data bits, non-Parity, 1-Stop bit.
 
 Build Firmware
 --------------
-Use 'make' to build the firmware for the TMK Newton converter:
+Use 'make' to build the firmware for the Xericity converter:
 
     $ make clean
     $ make 
